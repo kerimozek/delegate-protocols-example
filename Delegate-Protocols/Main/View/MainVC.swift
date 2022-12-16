@@ -7,8 +7,10 @@
 
 import UIKit
 
-class FirstVC: UIViewController {
+class MainVC: UIViewController {
 
+    @IBOutlet weak var mainTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
