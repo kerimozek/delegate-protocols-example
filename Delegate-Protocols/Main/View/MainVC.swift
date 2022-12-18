@@ -48,6 +48,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
         DetailVC.shared.details = MainVM.shared.post[indexPath.row]
+        print("serkan")
         navigationController?.pushViewController(vc, animated: true)
     }
       
