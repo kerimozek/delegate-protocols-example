@@ -24,7 +24,6 @@ class NetworkManager {
                     completion(.failure(.generalError))
                 } else if let data = data {
                     print(data)
-                    print("true")
                     self.handleResponse(data: data) { response in
                         completion(response)
                     }
