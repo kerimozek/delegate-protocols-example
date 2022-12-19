@@ -27,7 +27,6 @@ class MainVM {
             if let items = items {
                 self.post = items
                 self.delegate?.didGetPosts(isDone: true)
-                print("true")
             }
             complete(errorMessage)
             self.delegate?.didGetPosts(isDone: false)
