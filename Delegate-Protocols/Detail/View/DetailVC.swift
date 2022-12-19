@@ -23,6 +23,5 @@ class DetailVC: UIViewController {
     private func setupUI() {
         detailLabel.text = details?.body
         titleLabel.text = details?.title
-        print("true")
     }
 }
