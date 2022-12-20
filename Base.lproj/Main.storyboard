@@ -48,13 +48,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hba-Bd-kg8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Kerrami" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hba-Bd-kg8">
                                 <rect key="frame" x="16" y="110" width="382" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQR-p7-W3Q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamidou" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQR-p7-W3Q">
                                 <rect key="frame" x="24" y="200" width="366" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -64,13 +64,12 @@
                         <viewLayoutGuide key="safeArea" id="dYr-BH-m2p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dYr-BH-m2p" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="yQR-p7-W3Q" secondAttribute="bottom" constant="641.5" id="0Ca-jw-w7A"/>
-                            <constraint firstItem="dYr-BH-m2p" firstAttribute="trailing" secondItem="yQR-p7-W3Q" secondAttribute="trailing" constant="24" id="0ip-a3-49S"/>
-                            <constraint firstItem="yQR-p7-W3Q" firstAttribute="top" secondItem="hba-Bd-kg8" secondAttribute="bottom" constant="66" id="7M2-uu-Q19"/>
-                            <constraint firstItem="dYr-BH-m2p" firstAttribute="trailing" secondItem="hba-Bd-kg8" secondAttribute="trailing" constant="16" id="D9j-uc-vIl"/>
-                            <constraint firstItem="hba-Bd-kg8" firstAttribute="leading" secondItem="dYr-BH-m2p" secondAttribute="leading" constant="16" id="VfT-Mb-8l4"/>
-                            <constraint firstItem="yQR-p7-W3Q" firstAttribute="leading" secondItem="dYr-BH-m2p" secondAttribute="leading" constant="24" id="X3l-Yz-muR"/>
-                            <constraint firstItem="hba-Bd-kg8" firstAttribute="top" secondItem="dYr-BH-m2p" secondAttribute="top" constant="66" id="zdw-uf-mgT"/>
+                            <constraint firstItem="hba-Bd-kg8" firstAttribute="centerX" secondItem="yzY-WH-btJ" secondAttribute="centerX" id="6CR-jh-GRp"/>
+                            <constraint firstItem="hba-Bd-kg8" firstAttribute="top" secondItem="dYr-BH-m2p" secondAttribute="top" constant="66" id="IlW-SD-VTj"/>
+                            <constraint firstItem="hba-Bd-kg8" firstAttribute="leading" secondItem="dYr-BH-m2p" secondAttribute="leading" constant="16" id="KiY-0I-TIK"/>
+                            <constraint firstItem="yQR-p7-W3Q" firstAttribute="top" secondItem="hba-Bd-kg8" secondAttribute="bottom" constant="66" id="QDc-6u-Gu8"/>
+                            <constraint firstItem="hba-Bd-kg8" firstAttribute="centerX" secondItem="yQR-p7-W3Q" secondAttribute="centerX" id="d0L-Ir-lGR"/>
+                            <constraint firstItem="yQR-p7-W3Q" firstAttribute="leading" secondItem="dYr-BH-m2p" secondAttribute="leading" constant="24" id="tc4-pC-5YP"/>
                         </constraints>
                     </view>
                     <connections>
