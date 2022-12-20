@@ -12,6 +12,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     let postCell = "PostCell"
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -28,7 +29,6 @@ class MainVC: UIViewController {
             }
         }
     }
-
 }
 
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
@@ -41,13 +41,16 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         let item = MainVM.shared.post[indexPath.row]
         cell.configureCell(item: item)
         cell.backgroundColor = UIColor.clear
+        cell.selectionStyle = .none
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
-        DetailVC.shared.details = MainVM.shared.post[indexPath.row]
+        let item = MainVM.shared.post[indexPath.row]
+        print(item.title as Any)
+        DetailVC.shared.details = item
         navigationController?.pushViewController(vc, animated: true)
     }
       
@@ -61,5 +64,4 @@ extension MainVC: MainDelegate {
             }
         }
     }
-    
 }
