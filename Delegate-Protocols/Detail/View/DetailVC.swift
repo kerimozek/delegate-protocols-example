@@ -17,11 +17,8 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        titleLabel.text =  details?.title
+        print(details?.body)
     }
     
-    private func setupUI() {
-        detailLabel.text = details?.body
-        titleLabel.text = details?.title
-    }
 }
