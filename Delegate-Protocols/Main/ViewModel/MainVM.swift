@@ -16,7 +16,7 @@ class MainVM {
     
     weak var delegate: MainDelegate?
     static let shared = MainVM()
-    private init () { }
+//    private init () { }
     
     var post: [PostElement] = []
     
