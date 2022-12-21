@@ -18,7 +18,6 @@ class DetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text =  details?.title
-        print(details?.body)
     }
     
 }
