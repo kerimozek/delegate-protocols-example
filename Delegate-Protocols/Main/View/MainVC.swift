@@ -51,6 +51,7 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         let item = MainVM.shared.post[indexPath.row]
         print(item.title as Any)
         DetailVC.shared.details = item
+        print("true")
         navigationController?.pushViewController(vc, animated: true)
     }
       
